@@ -1,0 +1,73 @@
+.car {
+	font-size: 16px;
+	position: relative;
+	transition: all 0.4s ease;
+	opacity: 0.9;
+
+	&:nth-child(even) {
+		background: #f9f4ff;
+	}
+	&:nth-child(odd) {
+		background: #ffffff;
+	}
+
+	button {
+		&:first-child {
+			margin-right: 25px;
+		}
+	}
+
+	&.noAv {
+		background: #f44336;
+	}
+	&:hover {
+		opacity: 1;
+	}
+
+	td {
+		padding: 10px;
+	}
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.image {
+	margin-right: 15px;
+	width: 140px;
+}
+
+.imageNone {
+	background-color: #999;
+	height: 78px;
+}
+
+button {
+	border: none;
+	border-radius: 2px;
+	padding: 12px 18px;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: white;
+	background-color: #895be2;
+	box-shadow: 0 0 4px #999;
+	outline: none;
+}
+
+.button {
+	background-position: center;
+	transition: background 0.8s;
+	min-width: 100px;
+
+	&:hover {
+		background: #a770ef radial-gradient(circle, transparent 1%, #a770ef 1%) center/15000%;
+	}
+
+	&:active {
+		background-color: #a770ef;
+		background-size: 100%;
+		transition: background 0s;
+	}
+}
